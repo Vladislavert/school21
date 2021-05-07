@@ -2,7 +2,7 @@ CC		= gcc
 
 NAME	= libft.a
 
-SRC_DIR	= ./src/
+SRC_DIR	= ./
 
 OBJ_DIR	= ./obj/
 
