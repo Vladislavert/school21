@@ -11,7 +11,8 @@ SRCS	= $(SRC_DIR)ft_memset.c $(SRC_DIR)ft_bzero.c $(SRC_DIR)ft_memcpy.c $(SRC_DI
 			  $(SRC_DIR)ft_strchr.c  $(SRC_DIR)ft_strnstr.c $(SRC_DIR)ft_strncmp.c \
 			  $(SRC_DIR)ft_isalpha.c $(SRC_DIR)ft_isdigit.c $(SRC_DIR)ft_isalnum.c $(SRC_DIR)ft_isascii.c $(SRC_DIR)ft_isprint.c \
 			  $(SRC_DIR)ft_toupper.c $(SRC_DIR)ft_tolower.c $(SRC_DIR)ft_calloc.c $(SRC_DIR)ft_strdup.c $(SRC_DIR)ft_substr.c \
-			  $(SRC_DIR)ft_putchar_fd.c $(SRC_DIR)ft_putstr_fd.c $(SRC_DIR)ft_putnbr_fd.c
+			  $(SRC_DIR)ft_putchar_fd.c $(SRC_DIR)ft_putstr_fd.c $(SRC_DIR)ft_putnbr_fd.c $(SRC_DIR)ft_split.c $(SRC_DIR)ft_strjoin.c \
+			  $(SRC_DIR)ft_strmapi.c $(SRC_DIR)ft_putendl_fd.c $(SRC_DIR)ft_strtrim.c $(SRC_DIR)ft_strrchr.c
  
 OBJS	= $(patsubst $(SRC_DIR)%.c, $(OBJ_DIR)%.o, $(SRCS))
 

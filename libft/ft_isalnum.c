@@ -6,7 +6,7 @@
 /*   By: hambrode <hambrode@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:11:50 by hambrode          #+#    #+#             */
-/*   Updated: 2021/05/07 22:08:57 by hambrode         ###   ########.fr       */
+/*   Updated: 2021/05/09 17:08:43 by hambrode         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int ft_isalnum(int c)
 {
-	if (!ft_isalpha(c) || !ft_isdigit(c))
+	if (!ft_isalpha(c) && !ft_isdigit(c))
 		return (0);
 	else
 		return (1);

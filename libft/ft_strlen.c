@@ -6,15 +6,15 @@
 /*   By: hambrode <hambrode@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:17:12 by hambrode          #+#    #+#             */
-/*   Updated: 2021/05/07 22:44:08 by hambrode         ###   ########.fr       */
+/*   Updated: 2021/05/09 16:53:46 by hambrode         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
-	int length;
+	size_t	length;
 
 	length = 0;
 	while (str[length] != '\0')

@@ -6,7 +6,7 @@
 /*   By: hambrode <hambrode@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:16:56 by hambrode          #+#    #+#             */
-/*   Updated: 2021/05/07 21:30:42 by hambrode         ###   ########.fr       */
+/*   Updated: 2021/05/09 17:24:39 by hambrode         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		lengthS2;
 	int		count;
 
+	if (!s1 || !s2)
+		return (NULL);
 	lengthS1 = ft_strlen(s1);
 	lengthS2 = ft_strlen(s2);
-	str = (char*)malloc(lengthS1 + lengthS2 + 1);
+	str = (char *)malloc(lengthS1 + lengthS2 + 1);
+	if (!str)
+		return (NULL);
 	count = 0;
 	while (count != lengthS1 + lengthS2)
 	{
