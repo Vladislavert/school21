@@ -1,37 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hambrode <hambrode@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/07 21:13:32 by hambrode          #+#    #+#             */
-/*   Updated: 2021/05/09 19:59:05 by hambrode         ###   ########.fr       */
+/*   Created: 2021/05/09 20:01:19 by hambrode          #+#    #+#             */
+/*   Updated: 2021/05/09 20:30:25 by hambrode         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t			count;
-	unsigned char	*dst1;
-	unsigned char	*src1;
+	size_t	count;
+	size_t	size;
+	size_t	index_start;
+	size_t	length;
 
+	length = ft_strlen(dst);
+	if (dstsize > length)
+		size = dstsize - length - 1;
+	else
+		return (ft_strlen(src) + dstsize);
 	count = 0;
-	dst1 = (unsigned char *)dst;
-	src1 = (unsigned char *)src;
-	while (count < n)
+	index_start = length;
+	while (count < size && src[count])
 	{
-		if (src1[count] != (unsigned char)c)
-		{
-			dst1[count] = src1[count];
-			count++;
-		}
-		else
-			break ;
+		dst[index_start] = src[count];
+		index_start++;
+		count++;
 	}
-	if (count != 0)
-		return (dst1 + count + 1);
-	return (NULL);
+	dst[index_start] = '\0';
+	return (ft_strlen(src) + length);
 }
