@@ -6,7 +6,7 @@
 /*   By: hambrode <hambrode@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:23:56 by hambrode          #+#    #+#             */
-/*   Updated: 2021/05/07 21:23:57 by hambrode         ###   ########.fr       */
+/*   Updated: 2021/05/10 16:52:14 by hambrode         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char *buf;
+	char	*buf;
 
 	buf = NULL;
-	while(*s)
+	while (*s)
 	{
 		if (*s == (char)c)
 			buf = s;

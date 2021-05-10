@@ -6,13 +6,13 @@
 /*   By: hambrode <hambrode@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:12:15 by hambrode          #+#    #+#             */
-/*   Updated: 2021/05/07 21:27:55 by hambrode         ###   ########.fr       */
+/*   Updated: 2021/05/10 16:43:32 by hambrode         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

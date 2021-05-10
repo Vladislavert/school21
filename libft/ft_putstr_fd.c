@@ -6,7 +6,7 @@
 /*   By: hambrode <hambrode@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:16:25 by hambrode          #+#    #+#             */
-/*   Updated: 2021/05/09 17:29:27 by hambrode         ###   ########.fr       */
+/*   Updated: 2021/05/10 16:48:27 by hambrode         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int length;
+	int	length;
 
 	if (s)
 	{

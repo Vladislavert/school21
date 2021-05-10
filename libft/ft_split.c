@@ -6,7 +6,7 @@
 /*   By: hambrode <hambrode@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/09 15:33:33 by hambrode          #+#    #+#             */
-/*   Updated: 2021/05/10 15:12:12 by hambrode         ###   ########.fr       */
+/*   Updated: 2021/05/10 16:54:02 by hambrode         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,10 @@ static void	get_strings(char **strings, const char *s, char c, size_t size)
 {
 	size_t	size_str;
 	char	*ptr_sep;
-	
-	while(size--)
+
+	while (size--)
 	{
-		while(*(s) == c)
+		while (*(s) == c)
 			s++;
 		ptr_sep = ft_strchr(s, c);
 		if (ptr_sep == NULL)
@@ -62,7 +62,7 @@ char	**ft_split(char const *s, char c)
 	size_t	count;
 	size_t	size_array;
 	char	**str;
-	
+
 	if (!s)
 		return (NULL);
 	count = 0;

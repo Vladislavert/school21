@@ -31,7 +31,7 @@ char	*ft_itoa(int value)
 		val *= -1;
 		str[0] = '-';
 	}
-	while(size--)
+	while (size--)
 	{
 		if (str[0] == '-' && size == 0)
 			break ;

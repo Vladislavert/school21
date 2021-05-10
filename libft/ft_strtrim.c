@@ -6,7 +6,7 @@
 /*   By: hambrode <hambrode@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:19:17 by hambrode          #+#    #+#             */
-/*   Updated: 2021/05/09 19:56:24 by hambrode         ###   ########.fr       */
+/*   Updated: 2021/05/10 16:57:16 by hambrode         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@
 
 int	check_symdol(const char s1, char const *set)
 {
-	size_t count_set;
+	size_t	count_set;
 
 	count_set = 0;
 	while (count_set != ft_strlen(set))
 	{
-		if (s1 == *(set  + count_set))
+		if (s1 == *(set + count_set))
 			return (0);
 		count_set++;
 	}
@@ -34,7 +34,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	count_end;
 	size_t	count;
 	char	*str;
-	
+
 	if (!s1 || !set)
 		return (NULL);
 	count_start = 0;
@@ -43,7 +43,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		count_end = 1;
 	else
 		count_end -= 1;
-	while(count_start <= count_end)
+	while (count_start <= count_end)
 	{
 		if (!check_symdol(s1[count_start], set))
 			count_start++;
