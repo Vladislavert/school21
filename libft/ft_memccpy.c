@@ -6,7 +6,7 @@
 /*   By: hambrode <hambrode@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:13:32 by hambrode          #+#    #+#             */
-/*   Updated: 2021/05/09 19:59:05 by hambrode         ###   ########.fr       */
+/*   Updated: 2021/05/10 14:37:04 by hambrode         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 			count++;
 		}
 		else
-			break ;
+			return (dst1 + count + 1);
 	}
-	if (count != 0)
-		return (dst1 + count + 1);
 	return (NULL);
 }

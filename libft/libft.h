@@ -6,7 +6,7 @@
 /*   By: hambrode <hambrode@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 20:59:21 by hambrode          #+#    #+#             */
-/*   Updated: 2021/05/09 20:11:28 by hambrode         ###   ########.fr       */
+/*   Updated: 2021/05/10 15:58:59 by hambrode         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,9 @@ void	ft_putnbr_fd(int n, int fd);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
+int	ft_atoi(char *str);
+void	*ft_memmove(void *dst, const void *src, size_t len);
+char	*ft_itoa(int value);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif

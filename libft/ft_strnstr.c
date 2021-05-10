@@ -6,7 +6,7 @@
 /*   By: hambrode <hambrode@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:18:32 by hambrode          #+#    #+#             */
-/*   Updated: 2021/05/07 21:26:07 by hambrode         ###   ########.fr       */
+/*   Updated: 2021/05/10 14:52:03 by hambrode         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,16 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 	i = 0;
 	j = 0;
-	if (!strncmp(haystack, needle, len))
+	// if (!strncmp(haystack, needle, len))
+	// 	return (haystack);
+	if (!(*needle))
 		return (haystack);
-	while (i < len)
+	while (i < len && haystack[i])
 	{
 		if (haystack[i] == needle[j])
 			while (needle[j] && haystack[i + j] && (i + j) < len)
 			{
-				if (needle[j] != haystack[j])
+				if (needle[j] != haystack[i + j])
 					break ;
 				else if (needle[j + 1] == '\0')
 					return (haystack[i]);

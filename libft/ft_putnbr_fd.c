@@ -6,9 +6,10 @@
 /*   By: hambrode <hambrode@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/07 21:16:10 by hambrode          #+#    #+#             */
-/*   Updated: 2021/05/09 17:26:40 by hambrode         ###   ########.fr       */
+/*   Updated: 2021/05/10 15:58:42 by hambrode         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+void ft_putnbr_fd(int n, int fd);
