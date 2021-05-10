@@ -50,7 +50,7 @@ static void	get_strings(char **strings, const char *s, char c, size_t size)
 		*strings = ft_calloc(size_str + 1, sizeof(char));
 		if (*strings == NULL)
 			return ;
-		ft_strlcpy(*strings, s, size_str + 1);
+		ft_strlcpy(*strings, (char *)s, size_str + 1);
 		s = ptr_sep;
 		strings++;
 	}
@@ -59,18 +59,16 @@ static void	get_strings(char **strings, const char *s, char c, size_t size)
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	count;
 	size_t	size_array;
 	char	**str;
 
 	if (!s)
 		return (NULL);
-	count = 0;
 	size_array = 0;
 	size_array = number_separators(s, c);
 	str = (char **)ft_calloc(size_array + 1, sizeof(char *));
 	if (!str)
 		return (NULL);
-	get_strings(str, s, c, size_array);
+	get_strings(str, (const char *)s, c, size_array);
 	return (str);
 }
